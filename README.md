@@ -22,3 +22,8 @@ __Installing yarn__
 __Starting react project__
 
 ```npx create-react-app frontend --template typescript```
+
+__Bootstrap__
+
+````yarn add bootstrap```
+

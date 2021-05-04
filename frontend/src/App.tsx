@@ -5,10 +5,9 @@ essa função como sendo um componente no REACT
 function App() {
   return (
     <div>
-      <h1>Olá mundo, Beleza?</h1>
+      <h1 className="text-primary">Olá mundo, Beleza?</h1>
     </div>
   );
 }
-
 
 export default App;
