@@ -17,6 +17,7 @@ public class SaleSuccessDTO implements Serializable {
     private final static long serialVersionUID = 1l;
 
     /**
+     * QUANTIDADE DE VENDAS FEITAS DIVIDIDO PELA QUANTIDADE DE VISITAS
      *  {
      *     "sellerName": "Logan",
      *     "visited": 1495,

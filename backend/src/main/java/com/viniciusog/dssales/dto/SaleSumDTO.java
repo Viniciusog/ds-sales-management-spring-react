@@ -15,6 +15,7 @@ import java.io.Serializable;
 
 public class SaleSumDTO implements Serializable {
     /**
+     * SOMA DAS VENDAS REALIZADAS POR CADA FUNCIONÁRIO
      * OBJETO QUE SERÁ RETORNADO EM /sales/amount-by-seller
      * {
      *     "sellerName": "BarryAllen",
