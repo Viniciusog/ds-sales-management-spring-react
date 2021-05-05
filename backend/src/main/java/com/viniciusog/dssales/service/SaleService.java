@@ -1,6 +1,8 @@
 package com.viniciusog.dssales.service;
 
 import com.viniciusog.dssales.dto.SaleDTO;
+import com.viniciusog.dssales.dto.SaleSuccessDTO;
+import com.viniciusog.dssales.dto.SaleSumDTO;
 import com.viniciusog.dssales.entities.Sale;
 import com.viniciusog.dssales.repositories.SaleRepository;
 import com.viniciusog.dssales.repositories.SellerRepository;
@@ -9,6 +11,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -40,6 +44,18 @@ public class SaleService {
         Page<Sale> result = saleRepository.findAll(pageable);
         //Transforma cada Sale de result para SaleDTO. Page já é uma Stream
         return result.map(sale -> new SaleDTO(sale));
+    }
+
+    @Transactional(readOnly = true)
+    public List<SaleSumDTO> amountGroupedBySeller() {
+        //Já retorna a soma das vendas agrupadas pelo nome de cada vendedor
+        return saleRepository.amountGroupedBySeller();
+    }
+
+    @Transactional(readOnly = true)
+    public List<SaleSuccessDTO> successGroupedBySeller() {
+        //Retorna a soma de todas as visitas e vendas agrupadas pelo nome de cada vendedor
+        return saleRepository.successGroupedBySeller();
     }
 }
 
