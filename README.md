@@ -11,7 +11,8 @@
 
 ### How to run ?
 
-
+1 - Faça um clone da aplicação
+2 - Substitua as variáveis de ambiente (usuário e senha) de acordo com o seu banco de dados
 
 ### Useful commands:
 
