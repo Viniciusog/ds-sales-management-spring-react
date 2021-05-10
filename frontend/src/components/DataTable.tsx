@@ -19,6 +19,7 @@ function DataTable() {
         totalPages: 0
     });
 
+    //USE EFFECT ESCUTA activePage
     //O use EFFECT carregará inicialmente e todas as vezes que o ACTIVE PAGE mudar também
     useEffect(() => {
         //getAllSales, porém com paginação
