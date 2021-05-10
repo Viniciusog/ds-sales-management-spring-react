@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { SalePage } from "types/sale";
-import { formatLocalDate } from "utils/format";
-import { BASE_URL } from "utils/requests";
+import { SalePage } from "../types/sale";
+import { formatLocalDate } from "../utils/format";
+import { BASE_URL } from "../utils/requests";
 import Pagination from "./Pagination";
 
 function DataTable() {
@@ -28,7 +28,7 @@ function DataTable() {
                 //contém tudo o que a nossa api java retorna na response
                 setPage(response.data)
             })
-    }, [activePage])
+    }, [activePage]);
 
     //Função que alterará o nosso objeto activePage de acordo com um id passado por parâmetro
     function changePage(index: number) {

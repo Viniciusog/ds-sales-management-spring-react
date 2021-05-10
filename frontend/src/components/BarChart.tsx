@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts'
-import { SaleSuccess } from 'types/sale';
-import { round } from 'utils/format';
-import { BASE_URL } from 'utils/requests';
+import { SaleSuccess } from '../types/sale';
+import { round } from '../utils/format';
+import { BASE_URL } from '../utils/requests';
 
 //É o tipo de cada objeto do array series
 type SeriesData = {
@@ -58,7 +58,7 @@ function BarChart() {
                     ]
                 })
             })
-    }, [chartData]) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
+    }, []) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
     //PORÉM, COMO OS DADOS DO BANCO DE DADOS SERÃO SEMPRE OS MESMOS, O NOSSO GRÁFICO GARREGARÁ, 
     //DE TODA FORMA, APENAS UMA VEZ
 

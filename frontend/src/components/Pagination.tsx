@@ -1,4 +1,4 @@
-import { SalePage } from "types/sale";
+import { SalePage } from "../types/sale";
 
 //O nosso componente Pagination receberá algumas propriedades. Essas propriedades nós chamamos de props
 //Além disso, quando o nosso usuário clicar para avançar ou voltar uma determinada página, temos que enviar 

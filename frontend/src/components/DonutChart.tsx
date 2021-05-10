@@ -1,16 +1,17 @@
 
 //AXIOS REALIZA EXECUTA MÉTODOS HTTPS (get post put, delete etc)
-import axios from 'axios'
+  
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts'
-import { BASE_URL } from "../utils/requests"
-import { SaleSum } from 'types/sale'
-import { useEffect, useState } from 'react'
+import { BASE_URL } from '../utils/requests';
+import { SaleSum } from '../types/sale';
 
 
 //Tipo dos dados do gráfico
 type ChartData = {
     labels: string[];
-    series: number[]
+    series: number[];
 }
 
 function DonutChart() {
@@ -50,7 +51,7 @@ function DonutChart() {
 
                 console.log(chartData)
             })
-    }, [chartData]) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
+    }, []) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
     //PORÉM, COMO OS DADOS DO BANCO DE DADOS SERÃO SEMPRE OS MESMOS, O NOSSO GRÁFICO GARREGARÁ, 
     //DE TODA FORMA, APENAS UMA VEZ
 
