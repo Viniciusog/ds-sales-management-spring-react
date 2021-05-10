@@ -26,6 +26,20 @@ public class SaleDTO implements Serializable {
     private Double amount;
     private LocalDate date;
 
+    //Aqui eu coloquei sellerDTO, por isso, no react eu tive que fazer da seguinte forma
+    //para pegar o conteúdo da response
+    /**
+     * import { Seller } from "./seller"
+     * //Objeto Sale
+     * export type Sale = {
+     *     id: number,
+     *     visited: number,
+     *     deals: number,
+     *     amount: number,
+     *     date: string,
+     *     sellerDTO: Seller;
+     * }
+     */
     private SellerDTO sellerDTO;
 
     public SaleDTO(Sale sale) {

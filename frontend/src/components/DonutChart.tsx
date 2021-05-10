@@ -21,6 +21,7 @@ function DonutChart() {
 
 
     //Tem dois parâmetros, o primeiro é a função que irá executar e o segundo é o objeto que será sempre escutado
+    //Se o objeto que for executado, nunca muda, então iremos executar a função do primeiro parâmetro apenas
     useEffect(() => {
         //response.data() é o corpo da resposta
         //Por padrão, as requisições feitas pelo AXIOS são ASSÍNCRONAS, ou seja:

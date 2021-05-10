@@ -16,7 +16,7 @@ type ChartData = {
     labels: {
         categories: string[]
     },
-    series: SeriesData[] //é um array
+    series: SeriesData[] //é um array de objeto SeriesData
 }
 
 function BarChart() {
