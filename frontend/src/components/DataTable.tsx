@@ -6,10 +6,9 @@ import { BASE_URL } from "utils/requests";
 import Pagination from "./Pagination";
 
 function DataTable() {
-
+    
     //O valor padrão para o número da página ativada é 0
     const [activePage, setActivePage] = useState(0)
-
     //É o resultado da requisição de paginação de Sales
     const [page, setPage] = useState<SalePage>({
         //Além desses atributos obrigatórios, tem também o content e outros não obrigatórios, definidos em SalePage
@@ -20,7 +19,7 @@ function DataTable() {
         totalPages: 0
     });
 
-    //O use effect carregará inicialmente e todas as vezes que o activePage mudar também
+    //O use EFFECT carregará inicialmente e todas as vezes que o ACTIVE PAGE mudar também
     useEffect(() => {
         //getAllSales, porém com paginação
         axios.get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
