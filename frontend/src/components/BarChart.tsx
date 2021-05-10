@@ -58,7 +58,9 @@ function BarChart() {
                     ]
                 })
             })
-    }, [])
+    }, [chartData]) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
+    //PORÉM, COMO OS DADOS DO BANCO DE DADOS SERÃO SEMPRE OS MESMOS, O NOSSO GRÁFICO GARREGARÁ, 
+    //DE TODA FORMA, APENAS UMA VEZ
 
     /**Aqui diz apenas que o nosso gráfico de barras será na horizontal */
     const options = {
