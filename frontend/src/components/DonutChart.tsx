@@ -51,7 +51,7 @@ function DonutChart() {
 
                 console.log(chartData)
             })
-    }, []) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
+    }, [chartData]) //OBS SÓ COLOQUEI chartData AQUI POIS O NETLIFY DÁ UM AVISO NO DEPLOY DA APLICAÇÃO.
     //PORÉM, COMO OS DADOS DO BANCO DE DADOS SERÃO SEMPRE OS MESMOS, O NOSSO GRÁFICO GARREGARÁ, 
     //DE TODA FORMA, APENAS UMA VEZ
 
