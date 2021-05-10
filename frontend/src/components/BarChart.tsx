@@ -16,7 +16,7 @@ type ChartData = {
     labels: {
         categories: string[]
     },
-    series: SeriesData[]
+    series: SeriesData[] //é um array
 }
 
 function BarChart() {
@@ -34,6 +34,7 @@ function BarChart() {
         ]
     })
 
+    //Toda a vez que o segundo parâmetro mudar, executaremos a função do primeiro parâmetro
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/success-by-seller`)
             .then((response) => {
@@ -80,3 +81,12 @@ function BarChart() {
 }
 
 export default BarChart;
+
+/**
+ *  useState é faz com que tenhamos apenas um único objeto durante todo o ciclo de vida do react, podendo
+ * mudar o seu valor através do nome da função informada quando o objeto é criado.
+ * 
+ * useEffects é responsável por executar uma determinada função todas as vezes que um segundo parâmetro muda.
+ * Se queremos executar essa função do useEffects apenas uma única vez, então podemos colocar algo que será constante (Nunca muda)
+ *  
+*/
