@@ -1,6 +1,7 @@
-import Chart from 'react-apexcharts'
+
 //AXIOS REALIZA EXECUTA MÉTODOS HTTPS (get post put, delete etc)
 import axios from 'axios'
+import Chart from 'react-apexcharts'
 import { BASE_URL } from "../utils/requests"
 import { SaleSum } from 'types/sale'
 import { useEffect, useState } from 'react'
