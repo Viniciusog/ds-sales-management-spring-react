@@ -6,7 +6,7 @@ import { SaleSum } from 'types/sale'
 import { useEffect, useState } from 'react'
 
 
-//Dados do gráfico
+//Tipo dos dados do gráfico
 type ChartData = {
     labels: string[];
     series: number[]
@@ -50,14 +50,7 @@ function DonutChart() {
             })
     }, [])
 
-    /*Soma total de vendas por vendedor
-    const mockData = {
-        //Valor de cada parte do gráfico de Donut
-        series: [477138, 499928, 444867, 220426, 473088],
-        //Legenda para cada um dos valores do gráfico de Donut
-        labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-    }*/
-
+  
     const options = {
         legend: {
             show: true

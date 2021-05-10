@@ -6,3 +6,10 @@ export type SaleSum = {
     sellerName: string,
     sum: number
 }
+
+//DEFINIMOS AQUI O TIPO QUE INDICA A TAXA DE SUCESSO POR NOME DE VENDEDOR
+export type SaleSuccess = {
+    sellerName: string, 
+    visited: number,
+    deals: number
+}
