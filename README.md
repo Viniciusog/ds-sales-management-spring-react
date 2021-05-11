@@ -7,24 +7,34 @@
 - JDK 11+
 - Heroku CLI 
 - Maven
-- NPM and Yarn
+- NodeJS
+- NPM
 
-### How to run ?
+### Tutorial
 
-1 - Faça um clone da aplicação
-2 - Substitua as variáveis de ambiente (usuário e senha) de acordo com o seu banco de dados
+__1- Git clone__ 
 
-### Useful commands:
+```
+git clone https://github.com/Viniciusog/ds-sales.git
+```
 
-__Installing yarn__
+__2 - Run the Java API (backend folder) in your IDE__
 
-```npm instal --global yarn```
+Sales URL:  ``localhost:8080/sales``
 
-__Starting react project__
+Sellers URL: ``localhost:8080/sellers``
 
-```npx create-react-app frontend --template typescript```
+Sale sum by seller: ``localhost:8080/sale/amount-by-seller``
 
-__Bootstrap__
+Success index by seller: ``localhost:8080/sale/success-by-seller``
 
-````yarn add bootstrap```
+__3 - Install dependencies__ 
+
+``npm install`` 
+
+__4 - Start ds-sales website frontend__
+
+``yarn start``
+
+DS-Sales website will open at `` localhost:3000``
 
