@@ -5,7 +5,6 @@
 - Your favorite IDE
 - PostgreSQL
 - JDK 11+
-- Heroku CLI 
 - Maven
 - NodeJS
 - NPM
