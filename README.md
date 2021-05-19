@@ -1,5 +1,7 @@
 ## DS Sales :bar_chart:
 
+![alt text](https://github.com/Viniciusog/ds-sales/blob/main/Aulas/imgs/Dashboard.png)
+
 ### Requirements
 
 - Your favorite IDE
